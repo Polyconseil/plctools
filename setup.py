@@ -13,7 +13,7 @@ setup(
     version=VERSION,
     author="Polyconseil dev team",
     author_email="autolib-dev@polyconseil.fr",
-    description=("Collection of tools to manipulate a PLC."),
+    description="Collection of tools to manipulate a PLC.",
     license="BSD",
     keywords="modbus",
     url="https://github.com/polyconseil/plctools",
