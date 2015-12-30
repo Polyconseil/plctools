@@ -19,7 +19,9 @@ setup(
     url="https://github.com/polyconseil/plctools",
     packages=find_packages(),
     long_description="",
-    install_requires=open('requirements.txt').read(),
+    install_requires=[
+        'pylibmodbus',
+    ],
     entry_points = {
         'console_scripts': [
             'plc_dump = plc_dump:main',
