@@ -26,7 +26,7 @@ def registers_synchro(master_handle, slave_handle, start, end):
         # Write registers on slave Modbus server
         slave_handle.write_registers(x, master_data)
     # Remaining registers
-    master_data = master_handle.read_registers(end - (end % 121), end)
+    master_data = master_handle.read_registers(end - (end % 121), end % 121)
     # Write registers on slave Modbus server
     slave_handle.write_registers(end - (end % 121), master_data)
 
@@ -39,7 +39,7 @@ def coils_synchro(master_handle, slave_handle, start, end):
         # Write registers on slave Modbus server
         slave_handle.write_bits(x, 121, master_data)
     # Remaining registers
-    master_data = master_handle.read_bits(end - (end % 121), end)
+    master_data = master_handle.read_bits(end - (end % 121), end % 121)
     # Write registers on slave Modbus server
     slave_handle.write_bits(end - (end % 121), 121, master_data)
 
