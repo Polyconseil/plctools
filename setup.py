@@ -11,8 +11,8 @@ VERSION = re.compile(r"^VERSION = '(.*?)'", re.S).match(_version_file.read()).gr
 setup(
     name="plctools",
     version=VERSION,
-    author="Polyconseil dev team",
-    author_email="autolib-dev@polyconseil.fr",
+    author="Polyconseil",
+    author_email="opensource+plctools@polyconseil.fr",
     description="Collection of tools to manipulate a PLC.",
     license="BSD",
     keywords="modbus",
