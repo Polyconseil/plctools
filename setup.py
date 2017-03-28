@@ -22,7 +22,7 @@ setup(
     install_requires=[
         'pylibmodbus',
     ],
-    entry_points = {
+    entry_points={
         'console_scripts': [
             'plc_dump = plc_dump:main',
             'plc_load = plc_load:main',
